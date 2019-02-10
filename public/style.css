@@ -69,7 +69,8 @@ button {
   padding: 1em 1.4em;
   margin: 1em 0;
   width: 100%;
-  border-radius: 22px;
+  border-radius: 25px;
+  outline: none;
 }
 
 button[type="submit"] {
@@ -93,6 +94,11 @@ input[type="number"] {
   border: 1px solid #e5e5e5;
   padding: 1em 1.4em;
   color: #7e7e7e;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border: 3px solid #64b8d1;
 }
 
 button {
