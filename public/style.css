@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans');
+
 * {
   box-sizing: border-box;
 }
@@ -23,7 +25,7 @@ button {
 }
 
 p {
-  margin: 2em 0;
+  margin: 1em 0;
 }
 
 ol {
@@ -40,11 +42,13 @@ li {
 
 header {
   background-color: #fff;
+  box-shadow: 0 2px 15px rgba(0,0,0,.3);
 }
 
 .logo {
   width: 100%;
   max-width: 300px;
+  opacity: .7;
 }
 
 .container {
@@ -54,51 +58,97 @@ header {
   margin: 0 auto;
 }
 
+.js-join {
+  margin-top: 40%;
+}
+
 input[type="text"],
 input[type="number"],
 button {
   display: block;
-  padding: 0.8em 1.4em;
+  padding: 1em 1.4em;
   margin: 1em 0;
   width: 100%;
-  border-radius: 22px;
+  border-radius: 25px;
+  outline: none;
+}
+
+button[type="submit"] {
+  width: 160px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  box-shadow: 0 4px 15px #0f5f71;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+button[type="submit"]:active {
+  box-shadow: 0 2px 10px #0f5f71;
+  transform: translate(-50%, 4px);
 }
 
 input[type="text"],
 input[type="number"] {
   border: 1px solid #e5e5e5;
+  padding: 1em 1.4em;
+  color: #7e7e7e;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border: 3px solid #64b8d1;
 }
 
 button {
-  background-color: #39A4FC;
-  box-shadow: 0 3px 0 0 #2182D5;
+  background-color: #64b8d1;
   color: #fff;
   cursor: pointer;
   border: 0;
-}
-
-button:hover {
-  background-color: #2182D5;
-  box-shadow: 0 3px 0 0 #46505B;
-}
-
-button:active {
-  box-shadow: none;
-  transform: translateY(3px);
+  border-radius: 50px;
+  transition: all .2s ease-out;
+  -webkit-transition: .2s;
 }
 
 .buzzer {
   height: 10em;
   font-size: 2em;
+  font-family: 'Bubblegum Sans', cursive;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 3px rgba(0,0,0,.5);
+  font-weight: 600;
+  box-shadow: 0 8px 30px #0f5f71;
+}
+
+.buzzer:hover {
+  box-shadow: 0 9px 40px #0f5f71;
+}
+
+.buzzer:active {
+  box-shadow: 0 6px 7px  #0f5f71;
+  background-color: #23536f;
+  transform: translateY(8px) scale(.98, .98);
+  border-radius: 35px;
+  letter-spacing: 6px;
+}
+
+.js-joined-info {
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  text-shadow: 0 2px 3px rgba(0,0,0,.4);
+  color: rgb(90, 90, 90);
 }
 
 .secondary {
   background-color: #FD684A;
   color: #fff;
-  box-shadow: 0 3px 0 0 #ce553c;
+  box-shadow: 0 2px 15px #ce553c;
+  font-size: 18px;
+  letter-spacing: 1.2px;
 }
 
 .secondary:hover {
   background-color: #ce553c;
-  box-shadow: 0 3px 0 0 #963e2c;
+  box-shadow: 0 3px 8px #963e2c;
 }
