@@ -47,4 +47,6 @@ io.on('connection', (socket) => {
   })
 })
 
-server.listen(8090, () => console.log('Listening on 8090 *localhost:8090*'))
+let port = process.env.PORT || 8091;
+
+server.listen(port, () => console.log('Listening on 8091 *localhost:8091*'))

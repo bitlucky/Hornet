@@ -67,7 +67,7 @@ input[type="number"],
 button {
   display: block;
   padding: 1em 1.4em;
-  margin: 1em 0;
+  margin: .5em 0;
   width: 100%;
   border-radius: 25px;
   outline: none;
@@ -112,13 +112,15 @@ button {
 }
 
 .buzzer {
-  height: 10em;
+  height: 8em;
+  width: 9em;
   font-size: 2em;
   font-family: 'Bubblegum Sans', cursive;
   letter-spacing: 2px;
   text-shadow: 0 2px 3px rgba(0,0,0,.5);
   font-weight: 600;
   box-shadow: 0 8px 30px #0f5f71;
+  display: inline-block;
 }
 
 .buzzer:hover {
